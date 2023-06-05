@@ -13,12 +13,10 @@ body {
   }
   
   .header {
-    /* TODO: Define the grid area here */
     grid-area: header;
   }
   
   .footer {
-    /* TODO: Define the grid area here */
     grid-area: footer;
   }
   
@@ -27,9 +25,14 @@ body {
     grid-gap: 10px;
     background-color: #fff;
     color: #444;
-  
-    /* TODO: Define the grid-template-columns and grid-template-areas values here. */
     grid-template-columns: 120px 120px 120px;
+    /*
+    creates a grid with strings to reference the location
+    of each element. 
+    In each rule-declaration this string is used as
+    grid-area: string
+    to acquiere the location defined in this declaration
+    */
     grid-template-areas: 
       '....... header header'
       'sidebar content content'
